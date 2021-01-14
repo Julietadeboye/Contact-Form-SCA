@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Form</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+        <div>
+            <img>
+        </div>
+		<section>
+			<div class="header">
+                <h1>Let’s work together</h1>
+            </div>
+			<p>We’d love to hear from you! Send us a message using the form opposite, or email us.</p>
+			<form id="form" action="submit.html" method="POST" onsubmit="return validation()">
+				<fieldset>
+                    <legend>Your contact information</legend>
+                    
+                    <label for="firstname">First name </label>
+                    <input type="text" id="firstname" name="name" class="firstname"
+                    autofocus required>
+        
+                    <label for="lastname">Last name </label>
+                    <input type="text" id="lastname" name="name" class="lastname" autofocus required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+                
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="comments">How can we help you?</label>
+                <textarea id="comments" name="comments" placeholder="10 characters or more" required></textarea>
+                
+                <p class="price">Expected Budget</p>
+                <label>
+                    <input type="radio" name="budget" value="low"> 
+                    Less than $25k                        
+                </label>
+                <label>
+                    <input type="radio" name="budget" value="middium" checked> $25k - $50k
+                </label>
+                <label>
+                    <input type="radio" name="budget" value="high"> $50k - $100k
+                </label>
+                <label>
+                    <input type="radio" name="budget" value="premium"> $100k+
+                </label>
+                <label>
+            
+                <label for="socials">How did you hear about us?</label>
+                <select id="socials" name="socials">
+                    <option selected>Select one...</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="ad">An advertisment</option>
+                    <option value="friend">Through referral</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <input type="text" id="comment" name="comment" placeholder="please input other"></input>
+
+                <label>
+                    <input id="subscribe" name="subscribe" type="checkbox" value="subscribe">Add me to your email list
+                </label>
+               <!-- <input id="send_to" type="hidden" name="send_to" value="yourEmailHere">-->
+                <button type="submit" id="submit">Submit</button>
+			</form>
+
+		</section>
+		
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

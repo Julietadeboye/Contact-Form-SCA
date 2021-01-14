@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 242, 233);
+    font-family: 'Merienda';font-size: 40px;
+    font-weight: bold;
+    color: white;
+    width: 70%;
+    margin: auto;
+    padding-top: 200 px;
+}
+
+.header{
+    background-color:  rgb(192, 177, 143); 
+}
+
+.header h1 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+fieldset {
+    background-color:  rgb(247, 242, 230);
+    color: rgb(170, 170, 164);
+    border: 1px solid rgb(202, 198, 198);
+    height: 200px;
+    
+}
+p {
+    text-align: center;   
+}
+
